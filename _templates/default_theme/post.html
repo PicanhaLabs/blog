@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PicanhaLabs Blog</title>
+	{{> includes}}
+</head>
+<body>	
+	{{> header}}
+	
+	{{#post}}
+	
+	<article class="wrapper post">
+		<div class="post-header">
+			<h2 class="post-title">{{title}}</h2>
+			<h3>Author: {{author}}</h3>
+		</div>
+		
+		<div class="post-content">
+			{{{body}}}
+		</div>
+	</article>
+	
+	{{/post}}
+</body>
+</html>
