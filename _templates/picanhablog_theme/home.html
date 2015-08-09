@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Picanha Labs</title>
+		{{> includesheader}}
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="header-wrapper">
+				<div id="header">
+
+					{{> header}}
+
+					<!-- Banner -->
+					{{#last}}
+					<section id="banner" style="background: transparent url({{banner}}) no-repeat center">
+						<a href="{{url}}">
+							<header>
+								<h2>{{title}}</h2>
+								<p>{{author}}</p>
+							</header>
+						</a>
+					</section>
+					{{/last}}
+				</div>
+			</div>
+
+			<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Portfolio -->
+							<section>
+								<header class="major">
+									<h2>Last Posts</h2>
+								</header>
+								<div class="row">
+									{{#posts}}
+									<div class="4u 12u(mobile)">
+										<section class="box post-item-home">
+											<a href="{{url}}" class="image featured">
+												<img src="{{globals.baseurl}}{{banner}}" alt="{{title}}" />
+											</a>
+											<header>
+												<h3>{{title}}</h3>
+												<p>on {{creation}}</p>
+											</header>
+											<div class="excerpt">
+											{{{excerpt}}}
+											</div>
+											<footer>
+												<ul class="actions">
+													<li><a href="{{url}}" class="button icon fa-file-text">Read</a></li>
+													<li><a href="#" class="button alt icon fa-comment">0</a></li>
+												</ul>
+											</footer>
+										</section>
+									</div>
+									{{/posts}}
+								</div>
+							</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			{{> footer}}	
+
+		</div>
+
+		<!-- Scripts -->
+		{{> includesfooter}}
+	</body>
+</html>

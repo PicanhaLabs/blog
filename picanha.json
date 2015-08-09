@@ -1,0 +1,6 @@
+{
+	"template"	: {
+		"path"		: "./_templates/picanhablog_theme/",
+		"static"	: ["css", "js", "img", "fonts"]
+	}
+}
