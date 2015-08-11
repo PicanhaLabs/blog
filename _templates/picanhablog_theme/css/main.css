@@ -1,5 +1,4 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /*
 	Dopetrope by HTML5 UP
@@ -1071,7 +1070,7 @@
 
 	body {
 		background: #252122;
-		font-family: 'Source Sans Pro';
+		font-family: Helvetica, Arial, Sans-serif;
 		font-weight: 300;
 		color: #5d5d5d;
 	}
