@@ -4,6 +4,7 @@ author: PicanhaLabs
 categories: cat1, cat2
 tags: tag1, tag2
 banner: img/post/picanha.jpg
+template: post
 excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sunt magni sapiente voluptatum, ea sit, tempore excepturi fuga ipsa voluptate, dolores tenetur placeat dolore asperiores cupiditate. Voluptate recusandae dolores laborum.
 ---
 

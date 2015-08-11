@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Picanha Labs :: Authors</title>
+		{{> includesheader}}
+	</head>
+	<body class="right-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="header-wrapper">
+				<div id="header">
+
+					{{> header}}
+
+				</div>
+			</div>
+
+			<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u 12u(mobile)">
+
+							<!-- Content -->
+							<article class="box post authorlist clearfix">
+								<header>
+									<h2>Authors</h2>
+								</header>
+								{{#globals.authors}}
+									<div class="author clearfix">
+										<img src="{{pathAvatar-large}}"/>
+										<div class="data">
+											<h4>{{name}}</h4>
+											<p><a href="{{github}}">{{github}}</a></p>
+										</div>
+									</div>
+								{{/globals.authors}}
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			{{> footer}}
+
+		</div>
+
+		<!-- Scripts -->
+		{{> includesfooter}}
+
+	</body>
+</html>

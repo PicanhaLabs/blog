@@ -3,6 +3,7 @@ title: Second post
 author: cadeorenie@gmail.com
 categories: cat2
 tags: tag3
+template: post
 banner: img/post/picanha2.jpg
 ---
 

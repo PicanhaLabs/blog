@@ -1901,7 +1901,6 @@
 
 			#header {
 				text-align: center;
-				margin-bottom: 30px;
 			}
 
 				#header h1 {
@@ -2581,4 +2580,32 @@ article.post footer p {
 	line-height: 100px;
 	margin-bottom: 0;
 	margin-left: 20px;
+}
+
+.authorlist .author {
+	float: left;
+	text-align: center;
+	width: 375px;
+}
+
+.authorlist .author img {
+	border-radius: 1000px;
+}
+
+.authorlist .author a {
+	color: rgb(213, 35, 73);
+	text-decoration: none;
+}
+
+.authorlist .author a:focus,
+.authorlist .author a:hover {
+	color: #666;
+}
+
+.authorlist .author .data {
+	text-align: center;
+}
+
+#nav {
+	margin-bottom: 30px;
 }

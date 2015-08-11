@@ -1,7 +1,8 @@
 {
 	"template"	: {
 		"path"		: "./_templates/picanhablog_theme/",
-		"static"	: ["css", "js", "img", "fonts"]
+		"static"	: ["css", "js", "img", "fonts"],
+		"authors"	: "authors.html"
 	},
 	"authors" : [
 		{
