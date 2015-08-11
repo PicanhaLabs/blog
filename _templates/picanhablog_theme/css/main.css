@@ -2083,7 +2083,10 @@
 				#copyright .links {
 					padding: 0.85em 2.25em 0.85em 2.25em;
 				}
-
+			
+		.authorlist .author {
+			width: 33%;
+		}
 	}
 
 /* Tablet */
@@ -2179,7 +2182,10 @@
 			#copyright {
 				margin: 0;
 			}
-
+		
+		.authorlist .author {
+			width: 50%;
+		}
 	}
 
 /* Mobile */
@@ -2538,6 +2544,10 @@
 					padding: 0.75em 1.25em 0.75em 1.25em;
 				}
 
+		.authorlist .author {
+			width: 100%;
+		}
+
 	}
 
 
@@ -2584,7 +2594,6 @@ article.post footer p {
 .authorlist .author {
 	float: left;
 	text-align: center;
-	width: 375px;
 }
 
 .authorlist .author img {

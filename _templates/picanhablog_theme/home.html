@@ -54,8 +54,12 @@
 											</div>
 											<footer>
 												<ul class="actions">
-													<li><a href="{{url}}" class="button icon fa-file-text">Read</a></li>
-													<li><a href="#" class="button alt icon fa-comment">0</a></li>
+													<li>
+														<a href="{{url}}" class="button icon fa-file-text">Read</a>
+														</li>
+													<li>
+														<a href="{{url}}#disqus_thread" class="button alt icon fa-comment">0</a>
+													</li>
 												</ul>
 											</footer>
 										</section>
@@ -76,5 +80,18 @@
 
 		<!-- Scripts -->
 		{{> includesfooter}}
+
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'picanhalabs';
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		</script>
 	</body>
 </html>
