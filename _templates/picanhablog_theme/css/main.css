@@ -1149,8 +1149,12 @@
 		margin: 2em 0 2em 0;
 	}
 
-	p, ul, ol, dl, table {
+	p, ul, ol, dl, table, pre {
 		margin-bottom: 2em;
+	}
+
+	pre {
+		font-family: monospace;
 	}
 
 /* Form */
