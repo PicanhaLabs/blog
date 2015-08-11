@@ -28,9 +28,14 @@
 								
 								<header>
 									<h2>{{title}}</h2>
-									<p>by {{author}} on {{creation}}</p>
+									<p>on {{creation}}</p>
 								</header>
 								{{{body}}} 
+
+								<footer class="clearfix">
+									<img src="{{author.pathAvatar-medium}}" />
+									<p>by {{author.name}}</p>
+								</footer>
 
 							</article>
 							{{/post}}

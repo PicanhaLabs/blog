@@ -1,6 +1,6 @@
 ---
 title: Second post
-author: PicanhaLabs
+author: cadeorenie@gmail.com
 categories: cat2
 tags: tag3
 banner: img/post/picanha2.jpg

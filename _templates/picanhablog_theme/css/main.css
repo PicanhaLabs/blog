@@ -179,7 +179,8 @@
 		box-sizing: border-box;
 	}
 
-	.row:after, .row:before {
+	.row:after, .row:before,
+	.clearfix:after, .clearfix:before {
 		content: '';
 		display: block;
 		clear: both;
@@ -2562,4 +2563,22 @@
 
 .post-banner {
 	max-width: 100%;
+}
+
+article.post footer {
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+}
+
+article.post footer img {
+	border-radius: 1000px;
+	float: left;
+}
+
+article.post footer p {
+	float: left;
+	font-size: 25px;
+	line-height: 100px;
+	margin-bottom: 0;
+	margin-left: 20px;
 }
