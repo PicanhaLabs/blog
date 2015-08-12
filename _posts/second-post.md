@@ -5,6 +5,7 @@ categories: cat2
 tags: tag3
 template: post
 banner: img/post/picanha2.jpg
+date: 3/07/2015
 ---
 
 # Yo
