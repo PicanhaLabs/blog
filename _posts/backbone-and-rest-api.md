@@ -5,21 +5,20 @@ categories: javascript
 tags: backbone, node, rest, javascript
 template: post
 banner: img/post/backbone/post.jpg
-date: 16/08/2015
-draft: true
+date: 10/08/2015
 ---
 
 Some months ago in my job we were discussing about which javascript frameworks would fit better to us. We selected some of them for testing and then, when I got to [Backbone], I realized it was a little bit different from the others. I won't get too deep about this on this text, maybe I publish a dedicated series about [Backbone] in the future.
 
 Most part of the things I read was about Models, Collections and how it was awesome in [Backbone] when using a [Rest API][Rest]. The problem was I could not find a article show this as simples as it is.
 
-So I'm here now, some time after, for doing this. For showing how beautiful is this connection.
-
+So I'm here now, some time after, to do this. To show how beautiful this connection is.
+	
 ### Show me some code!
 
 *Note: this code can be [download on my Github](https://github.com/renie/backbone-node-sample)*
 
-This is actually an example for running in browser's console, só HTML file is just simple as that.
+This is actually an example for running in browser's console, so HTML file is just simple as that.
 
 ```html
 <!DOCTYPE html>
@@ -37,7 +36,7 @@ This is actually an example for running in browser's console, só HTML file is j
 </html>
 ```
 
-Until here nothing special, just importing [Backbone] itself and its dependencies ([jQuery] and [Underscore]). Just below this imports there is our example named 'User.js'.
+Until here nothing special, just importing [Backbone] itself and its dependencies ([jQuery] and [Underscore]). Just below these imports there is our example named 'User.js'.
 
 So let's take a look to this User.js.
 
@@ -53,13 +52,13 @@ var Users = Backbone.Collection.extend({
 });
 ```
 
-*Note: this is just an example, avoid global variables as much as possible PLEASE!*
+*Note: this is just an example, avoid global variables as much as possible, PLEASE!*
 
-Here we are just creating a [Backbone model](http://backbonejs.org/#Model), defining which is our server URL for users and which property is coming in the return of this URL that represents the id of this object.
+Here we are just creating a [Backbone model](http://backbonejs.org/#Model), defining what is our server URL for users and what property is coming in the return of this URL that represents the id of this object.
 
-We are also creating a [Backbone collection](http://backbonejs.org/#Collection), defining its model, so this will a collection of users. And we are defining collection URL also.
+We are also creating a [Backbone collection](http://backbonejs.org/#Collection), defining its model, so this will be a collection of users. And we are defining collection URL also.
 
-I don't think it worth to explain our [server file](https://github.com/renie/backbone-node-sample/blob/master/server.js) as the goal here is talk about [Backbone], but its quite simple. Just a node server that serves a /users URL accepting GET, POST, PUT and DELETE methods, and a [minimalist database](https://github.com/louischatriot/nedb) for persisting data.
+I don't think it's worth to explain our [server file](https://github.com/renie/backbone-node-sample/blob/master/server.js) as the goal here is talk about [Backbone], but it's quite simple. Just a node server that serves a /users URL accepting GET, POST, PUT and DELETE methods, and a [minimalist database](https://github.com/louischatriot/nedb) for persisting data.
 
 Now you can start trying things like this:
 
@@ -100,7 +99,7 @@ collection.add(alfred).save()
 
 ### Try it yourself!
 
-[Download this on my Github](https://github.com/renie/backbone-node-sample), run **node server.js** and try it at **localhost:3000/getAll.html**. I'm sure you will understand it much better. It's very simple and can easy your start if you are starting with [Backbone].
+[Download this on my Github](https://github.com/renie/backbone-node-sample), run **node server.js** and try it at **localhost:3000/getAll.html**. I'm sure you will understand it much better. It's very simple and can ease your start if you are starting with [Backbone].
 
 
 

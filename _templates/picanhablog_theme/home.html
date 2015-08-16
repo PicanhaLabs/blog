@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Picanha Labs</title>
@@ -16,7 +16,7 @@
 					<!-- Banner -->
 					{{#last}}
 					<section id="banner" style="background: transparent url({{banner}}) no-repeat center">
-						<a href="{{url}}">
+						<a href="{{url}}" title="Go to {{title}}">
 							<header>
 								<h2>{{title}}</h2>
 								<p>{{author.name}}</p>
@@ -42,11 +42,11 @@
 									{{#posts}}
 									<div class="4u 12u(mobile)">
 										<section class="box post-item-home">
-											<a href="{{url}}" class="image featured">
+											<a href="{{url}}" class="image featured" title="Go to {{title}}">
 												<img src="{{globals.baseurl}}{{banner}}" alt="{{title}}" />
 											</a>
 											<header>
-												<h3>{{title}}</h3>
+												<h3><a href="{{url}}" title="Go to {{title}}">{{title}}</a></h3>
 												<p>on {{creation}}</p>
 											</header>
 											<div class="excerpt">
@@ -55,10 +55,10 @@
 											<footer>
 												<ul class="actions">
 													<li>
-														<a href="{{url}}" class="button icon fa-file-text">Read</a>
+														<a href="{{url}}" class="button icon fa-file-text" title="Go to {{title}}">Read</a>
 														</li>
 													<li>
-														<a href="{{url}}#disqus_thread" class="button alt icon fa-comment">0</a>
+														<a href="{{url}}#disqus_thread" class="button alt icon fa-comment" title="Go directly to {{title}} comments.">0</a>
 													</li>
 												</ul>
 											</footer>
