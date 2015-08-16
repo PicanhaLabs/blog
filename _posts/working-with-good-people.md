@@ -4,7 +4,7 @@ author: gabriel.alan@outlook.com.br
 categories: people
 tags: management, people, learning
 template: post
-banner: img/post/working/learn-chalkboard.jpg
+banner: img/post/working/post.jpg
 date: 16/08/2015
 ---
 
