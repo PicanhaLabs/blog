@@ -151,8 +151,12 @@ Darkula color scheme from the JetBrains family of IDEs
   opacity: 0.5;
 }
 
+
+/* CUSTOM */
+
 pre {
   border: 1px dashed #eee;
   padding: 10px;
   background-color: #fcfcfc;
+  overflow: auto;
 }

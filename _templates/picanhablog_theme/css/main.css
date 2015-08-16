@@ -1094,7 +1094,7 @@
 
 	strong, b {
 		color: #252122;
-		font-weight: 400;
+		font-weight: bold
 	}
 
 	i, em {
@@ -2591,6 +2591,8 @@
 
 .post-banner {
 	max-width: 100%;
+    display: block;
+    margin: 0 auto 15px;
 }
 
 article.post footer {
