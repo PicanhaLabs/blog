@@ -16,7 +16,7 @@ So I'm here now, some time after, to do this. To show how beautiful this connect
 	
 ### Show me some code!
 
-*Note: this code can be [download on my Github](https://github.com/renie/backbone-node-sample)*
+*Note: this code can be [download on my Github](https://github.com/renie/backbone-node-sample "Go to github repo of this demo")*
 
 This is actually an example for running in browser's console, so HTML file is just simple as that.
 
@@ -54,11 +54,11 @@ var Users = Backbone.Collection.extend({
 
 *Note: this is just an example, avoid global variables as much as possible, PLEASE!*
 
-Here we are just creating a [Backbone model](http://backbonejs.org/#Model), defining what is our server URL for users and what property is coming in the return of this URL that represents the id of this object.
+Here we are just creating a [Backbone model](http://backbonejs.org/#Model "Go to documentation of Models in backbone"), defining what is our server URL for users and what property is coming in the return of this URL that represents the id of this object.
 
-We are also creating a [Backbone collection](http://backbonejs.org/#Collection), defining its model, so this will be a collection of users. And we are defining collection URL also.
+We are also creating a [Backbone collection](http://backbonejs.org/#Collection  "Go to documentation of Collections in backbone"), defining its model, so this will be a collection of users. And we are defining collection URL also.
 
-I don't think it's worth to explain our [server file](https://github.com/renie/backbone-node-sample/blob/master/server.js) as the goal here is talk about [Backbone], but it's quite simple. Just a node server that serves a /users URL accepting GET, POST, PUT and DELETE methods, and a [minimalist database](https://github.com/louischatriot/nedb) for persisting data.
+I don't think it's worth to explain our [server file](https://github.com/renie/backbone-node-sample/blob/master/server.js "Directly link to server code of this demo") as the goal here is talk about [Backbone], but it's quite simple. Just a node server that serves a /users URL accepting GET, POST, PUT and DELETE methods, and a [minimalist database](https://github.com/louischatriot/nedb "Go to explanation about NEDB") for persisting data.
 
 Now you can start trying things like this:
 
@@ -99,13 +99,13 @@ collection.add(alfred).save()
 
 ### Try it yourself!
 
-[Download this on my Github](https://github.com/renie/backbone-node-sample), run **node server.js** and try it at **localhost:3000/getAll.html**. I'm sure you will understand it much better. It's very simple and can ease your start if you are starting with [Backbone].
+[Download this on my Github](https://github.com/renie/backbone-node-sample "Go to github repo of this demo"), run **node server.js** and try it at **localhost:3000/getAll.html**. I'm sure you will understand it much better. It's very simple and can ease your start if you are starting with [Backbone].
 
 
 
 
 
-[jQuery]: https://jquery.com/
-[Underscore]: http://underscorejs.org/
-[Backbone]: http://backbonejs.org/
-[Rest]: https://en.wikipedia.org/wiki/Representational_state_transfer
+[jQuery]: https://jquery.com/ "Go to jQuery official page"
+[Underscore]: http://underscorejs.org/ "Go to Underscore official page"
+[Backbone]: http://backbonejs.org/ "Go to Backbone official page"
+[Rest]: https://en.wikipedia.org/wiki/Representational_state_transfer "Go to definition of REST on Wikipedia"
