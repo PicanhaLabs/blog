@@ -20,18 +20,21 @@
 			<div id="main-wrapper">
 				<div class="container">
 					<div class="row">
-						<div class="12u 12u(mobile)">
+						<div class="12u 12u(mobile) post-wrapper">
 							{{#post}}
 							<!-- Content -->
 							<article class="box post">
-								<img src="{{../globals.baseurl}}{{banner}}" alt="" class="post-banner" />
 								
 								<header>
 									<h2>{{title}}</h2>
 									<p>on {{creation}}</p>
 								</header>
+
+								<img src="{{../globals.baseurl}}{{banner}}" alt="" class="post-banner" />
+								
 								{{{body}}} 
 
+								
 								<footer class="clearfix">
 									<img src="{{author.pathAvatar-medium}}" />
 									<p>by {{author.name}}</p>

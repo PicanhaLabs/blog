@@ -1115,7 +1115,7 @@
 		border-left: solid 0.75em #dddddd;
 		padding: 1em 0 1em 1.5em;
 		font-style: italic;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	blockquote p {
@@ -1155,7 +1155,8 @@
 	}
 
 	p, ul, ol, dl, table, pre {
-		margin-bottom: 2em;
+	    margin-bottom: 1em;
+	    line-height: 1.1em;
 	}
 
 	pre {
@@ -2598,6 +2599,14 @@
 	max-width: 100%;
     display: block;
     margin: 0 auto 15px;
+}
+
+article.post {
+	padding-top: 0 !important;
+}
+
+.post-wrapper {
+	padding-top: 0 !important;
 }
 
 article.post footer {

@@ -6,22 +6,21 @@ tags: opinion, IE, excuses
 template: post
 banner: img/post/excuse-ie/post.jpg
 date: 17/08/2015
-draft: true
 ---
 
 Today I was watching a [talk](https://www.youtube.com/watch?v=XfZRsMkzVLM "Go to his talk (just in portuguese =/ )") of a [friend of mine](https://github.com/zigolis "Gabriel's Github") about front end architeture for high scalable systems. And in the beginning he talked, among other things, about why they support IE8-9.
 
-Basically he used the most common argument for justifying their choice: *These IE versions represents good part of our company's revenues.*
+Basically he used the most common argument for justifying their choice: *These IE versions represents good part of our company's gross sales.*
 
-And this argument is not bad. You can say "but these companies delay web evolution" or "not even Microsoft support this version anymore". And you are not wrong. But you are argumenting money with philosophy, and cannot convince CEO's with a beautiful history =(.
+And this argument is not bad. You can say "but these companies are delaying web evolution" or "not even Microsoft support this version anymore". And you are not wrong. But you are arguing money with philosophy, and cannot convince CEO's with a beautiful history =(.
 
-Otherwise you can always try to find a flaw in *money's argumment*.
+Otherwise you can always try to find a flaw in *money's argument*.
 
 
 ### The Calculation
 ** TL;DR : too lazy for this explanation? Jump to "After All section" and read Situation 1 **
 
-First relation people try to use.
+First relation people try to use:
 
 > We are an e-commerce and our gross sale is about 10 million/year. 10% of our users come from IE8. Therefore, ignore IE users will represent 1 million decrease in our revenues.
 
@@ -47,7 +46,7 @@ Now you must to know how many hours did you spend giving this support and what i
 
 How many code is add to the project to support this browsers? Not just that little hack on css. I mean everything. Conditional Javascript, workarounds, polyfills, libraries included for not "reinvent the wheel". And now you can calculate how much storage to you spend, how much do you spend with data traffic. Depending on your architeture, if you don't load things on demand, do not forget measuring the perfomance decrease to other browsers for loading all this useless data.
 
-Last but not least, try to measure (this is hard, but try), how many time did yout team lost using an older solution for something that already has a better alternative nowadays, just because that old browser does not support.
+Last but not least, try to measure (this is hard, but try), how many time did your team lost using an older solution for something that already has a better alternative nowadays, just because that old browser does not support.
 
 Ok, here you can get all this amount of money and decrease from that 800k.
 
