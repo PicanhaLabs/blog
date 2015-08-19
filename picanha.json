@@ -18,13 +18,19 @@
 			"roles"	: ["developer", "author", "reviewer"]
 		},
 		{
+			"name" 	: "Talissonn da Silva",
+			"email" : "talissonn.dasilva@gmail.com",
+			"link"	: "www.behance.net/talissonn",
+			"roles"	: ["designer"]
+		},
+		{
 			"name" 	: "José Junior",
 			"email" : "jwcostajr@gmail.com",
 			"roles"	: ["reviewer"]
 		},
 		{
 			"name" 	: "Edésio Schemes",
-			"email" : "edesio.schemes@gmail.com ",
+			"email" : "edesio.schemes@gmail.com",
 			"roles"	: ["reviewer"]
 		}
 	]
