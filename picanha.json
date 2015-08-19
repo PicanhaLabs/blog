@@ -2,18 +2,30 @@
 	"template"	: {
 		"path"		: "./_templates/picanhablog_theme/",
 		"static"	: ["css", "js", "img", "fonts"],
-		"authors"	: "authors.html"
+		"layouts"	: ["post", "page", "team"]
 	},
 	"authors" : [
 		{
-			"name" 		: "Gabriel Alan",
-			"email" 	: "gabriel.alan@outlook.com.br",
-			"github"	: "https://github.com/gabrielalan"
+			"name" 	: "Gabriel Alan",
+			"email" : "gabriel.alan@outlook.com.br",
+			"link"	: "https://github.com/gabrielalan",
+			"roles"	: ["developer", "author"]
 		},
 		{
-			"name" 		: "Renie Siqueira",
-			"email" 	: "cadeorenie@gmail.com",
-			"github"	: "https://github.com/renie"
+			"name" 	: "Renie Siqueira",
+			"email" : "cadeorenie@gmail.com",
+			"link"	: "https://github.com/renie",
+			"roles"	: ["developer", "author", "reviewer"]
+		},
+		{
+			"name" 	: "José Junior",
+			"email" : "jwcostajr@gmail.com",
+			"roles"	: ["reviewer"]
+		},
+		{
+			"name" 	: "Edésio Schemes",
+			"email" : "edesio.schemes@gmail.com ",
+			"roles"	: ["reviewer"]
 		}
 	]
 }

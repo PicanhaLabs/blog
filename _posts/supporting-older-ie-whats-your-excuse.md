@@ -42,9 +42,9 @@ Ok, now you could say:
 
 Caaalm down. Just hold this value.
 
-Now you must to know how many hours did you spend giving this support and what is the cost of this ours.
+Now you must to know how many hours you spent giving this support and what is the cost of this hours.
 
-How many code is add to the project to support this browsers? Not just that little hack on css. I mean everything. Conditional Javascript, workarounds, polyfills, libraries included for not "reinvent the wheel". And now you can calculate how much storage to you spend, how much do you spend with data traffic. Depending on your architeture, if you don't load things on demand, do not forget measuring the perfomance decrease to other browsers for loading all this useless data.
+How many code is added to the project to support this browsers? Not just that little hack on css. I mean everything. Conditional Javascript, workarounds, polyfills, libraries included for not "reinvent the wheel". And now you can calculate how much storage you spend, how much you spend with data traffic. Depending on your architeture, if you don't load things on demand, do not forget measuring the perfomance decrease to other browsers for loading all this useless data.
 
 Last but not least, try to measure (this is hard, but try), how many time did your team lost using an older solution for something that already has a better alternative nowadays, just because that old browser does not support.
 
@@ -71,7 +71,7 @@ If even after this analysis the company decides to keep the support. Two situati
 
 1- This support really worth. Stop crying `¯\_(ツ)_/¯` .
 
-2- The company doesn't give a shit for your calculation. So it's up to you. Keep your job, accept you reality and cry to the waiter in the end of the day. Or find a new one that fits your expectations.
+2- The company doesn't give a shit for your calculation. So it's up to you. Keep your job, accept your reality and cry to the waiter in the end of the day. Or find a new one that fits your expectations.
 
 
 ### A Tip

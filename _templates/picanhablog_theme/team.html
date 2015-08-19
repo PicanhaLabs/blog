@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Picanha Labs :: Authors</title>
+		<title>Picanha Labs :: Team</title>
 		{{> includesheader}}
 	</head>
 	<body class="right-sidebar">
@@ -25,14 +25,21 @@
 							<!-- Content -->
 							<article class="box post authorlist clearfix">
 								<header>
-									<h2>Authors</h2>
+									<h2>Team</h2>
 								</header>
 								{{#globals.authors}}
 									<div class="author clearfix">
 										<img src="{{pathAvatar-large}}"/>
 										<div class="data">
 											<h4>{{name}}</h4>
-											<p><a href="{{github}}">{{github}}</a></p>
+											<p><a href="{{link}}">{{link}}</a></p>
+										</div>
+										<div class="roles">
+										[
+											{{#each roles}}
+												<span>{{this}}</span>
+											{{/each}}
+										]
 										</div>
 									</div>
 								{{/globals.authors}}
