@@ -1383,7 +1383,7 @@
 
 		.image img {
 			display: block;
-			max-height: 255px;
+			max-height: 174px;
 			width: 100%;
 			object-fit: cover;
 		}
@@ -1898,7 +1898,7 @@
 		/* Wrappers */
 
 			#header-wrapper {
-				padding: 4.5em 0 0 0;
+				padding: 30px 0 0 0;
 			}
 
 			#main-wrapper {
@@ -1921,6 +1921,11 @@
 
 			#header {
 				text-align: center;
+				padding-bottom: 30px;
+			}
+
+			.homepage #header {
+				padding-bottom: 50px;
 			}
 
 				#header h1 {
@@ -2208,6 +2213,10 @@
 		
 		.authorlist .author {
 			width: 50%;
+		}
+
+		.image img { 
+			max-height: 144px;
 		}
 	}
 
@@ -2582,6 +2591,26 @@
     		padding: 10px 0 5px;
 		}
 
+		.post-item-home header h3 {
+			font-size: 1.5em;
+			height: 80px !important;
+		}
+
+		.post-item-home header p {
+			text-align: center;
+		}
+
+		.post-item-home .excerpt p {
+			text-align: center;
+			font-size: 1.1em;
+			line-height: 1.5em;
+		}
+
+		.homepage .logo {
+			height: 200px !important;
+			width: 200px !important;
+		}
+
 	}
 
 
@@ -2602,6 +2631,11 @@
     box-shadow: 0px 0px 22px 10px white;
     z-index: 1;
 }
+.post-item-home header h3 {
+    line-height: 1.3em;
+    height: 60px;
+}
+
 
 .post-banner {
 	max-width: 100%;
@@ -2664,13 +2698,13 @@ article.post footer p {
 }
 
 #nav {
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 .roles {
 	color: #666;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 23px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -2678,7 +2712,7 @@ article.post footer p {
 
 .roles span {
 	color: #ccc;
-	font-size: 16px;
+	font-size: 14px;
     display: inline-block;
     transform: translateY(-3px);
     -webkit-transform: translateY(-3px);
@@ -2687,4 +2721,33 @@ article.post footer p {
 .roles span::after, .roles span::before {
 	content: "\"";
 	font-size: 16px;
+}
+
+.logo {
+	height: 130px;
+	width: 130px;
+	margin: 0 auto !important;
+}
+
+.homepage .logo {
+	height: 350px;
+	width: 350px;
+}
+
+.logo a {
+	background: transparent url(../img/picanhalabs.svg) no-repeat center;
+	background-size: contain;
+	text-indent: -9999em;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+
+.logo a:hover,
+.logo a:focus {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
 }
