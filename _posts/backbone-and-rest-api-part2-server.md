@@ -4,7 +4,7 @@ author: cadeorenie@gmail.com
 categories: javascript
 tags: backbone, node, rest, javascript
 template: post
-banner: img/post/backbone/post.jpg
+banner: img/post/backbone2/post.jpg
 date: 20/08/2015
 draft: true
 ---
