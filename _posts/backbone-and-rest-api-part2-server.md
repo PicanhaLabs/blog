@@ -11,7 +11,7 @@ draft: true
 
 As I promised on the [first post][FirstPost], this is a post to explain the server side of that [Backbone] sample with [Rest API][Rest].
 
-Actually, as I told there, it's pretty simple: just starting a server, listen on a specific port, wait for some HTTP methods and persist on a very small database. Let's see this step by step and then the whole file.
+Actually, as I told there, it's pretty simple: just starting a server, listening on a specific port, waiting for some HTTP methods and persist on a very small database. Let's see this step by step and then the whole file.
 
 ### First the first stuff
 
@@ -36,7 +36,7 @@ app.use(bodyParser());
 ```
 Now we just config our static directory to **src** and ask [Express] to use [body-parser].
 
-OK, we are ready for starting our mappings!
+OK, we are ready to start our mappings!
 
 ### URL Mappings
 
@@ -56,7 +56,7 @@ app.get('/users', function(req, res) {
 
 Very simple, isn't it?
 
-Ok, now you want to receive e get parameter. Not a problem, you can see this on the second mapped URL.
+Ok, now you want to receive a get parameter. Not a problem, you can see this on the second mapped URL.
 
 ```javascript
 app.get('/users/:user_id', function(req, res) {
@@ -66,7 +66,7 @@ app.get('/users/:user_id', function(req, res) {
 
 You just have to say that this URL will receive a parameter via **:param_name**, and get this on attribute **params** of **request**.
 
-After do your stuff, in this case just get data from database, you have respond to your requester. And this is made using the method **send** of **response**. Just like this:
+After doing your stuff, in this case just get data from database, you have respond to your requester. And this is made using the method **send** of **response**. Just like this:
 
 ```javascript
 app.get('/users', function(req, res) {
