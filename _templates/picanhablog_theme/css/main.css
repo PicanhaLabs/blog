@@ -2751,3 +2751,12 @@ article.post footer p {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 }
+
+.social {
+	margin-bottom: 25px;
+}
+
+.social .twitter-share-button {
+	height: 22px !important;
+	margin-right: 15px !important;
+}

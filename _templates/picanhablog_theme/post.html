@@ -44,6 +44,11 @@
 							</article>
 							{{/post}}
 
+							<div class="social">
+								<a href="https://twitter.com/share" class="twitter-share-button" data-via="picanhalabs">Tweet</a>
+
+								<div class="g-plus" data-action="share" data-annotation="bubble" data-height="24"></div>
+							</div>
 							<div id="disqus_thread"></div>
 						</div>
 						<!-- Sidebar -->
@@ -99,6 +104,16 @@
 			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 			})();
+		</script>
+
+		<script>
+			/* * * TWITTER TAG * * */
+
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		</script>
+
+		<script src="https://apis.google.com/js/platform.js" async defer>
+			/* * * GOOGLE+ TAG * * */
 		</script>
 	</body>
 </html>
