@@ -6,7 +6,6 @@ tags: backbone, node, rest, javascript
 template: post
 banner: img/post/backbone2/post.jpg
 date: 20/08/2015
-draft: true
 ---
 
 As I promised on the [first post][FirstPost], this is a post to explain the server side of that [Backbone] sample with [Rest API][Rest].
