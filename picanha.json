@@ -2,7 +2,10 @@
 	"template"	: {
 		"path"		: "./_templates/picanhablog_theme/",
 		"static"	: ["css", "js", "img", "fonts"],
-		"layouts"	: ["post", "page", "team"]
+		"layouts"	: ["post", "page", "team"],
+		"globals"	: {
+			"siteurl"	: "http://blog.picanhalabs.com/"
+		}
 	},
 	"authors" : [
 		{

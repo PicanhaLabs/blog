@@ -2611,6 +2611,18 @@
 			width: 200px !important;
 		}
 
+		article.post footer img {
+			float: none !important;
+			display: block !important;
+			margin: 0 auto !important;
+		}
+
+		article.post footer p {
+			float: none !important;
+			margin: 0 !important;
+			text-align: center !important;
+		}
+
 	}
 
 
@@ -2759,4 +2771,10 @@ article.post footer p {
 .social .twitter-share-button {
 	height: 22px !important;
 	margin-right: 15px !important;
+}
+
+.social .fb-share-button {
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+    margin-left: 15px;
 }
