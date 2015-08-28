@@ -11,20 +11,7 @@
 			<!-- Header -->
 			<div id="header-wrapper">
 				<div id="header">
-
 					{{> header}}
-
-					<!-- Banner -->
-					<!--{{#last}}
-					<section id="banner" style="background: transparent url({{banner}}) no-repeat center">
-						<a href="{{url}}" title="Go to {{title}}">
-							<header>
-								<h2>{{title}}</h2>
-								<p>{{author.name}}</p>
-							</header>
-						</a>
-					</section>
-					{{/last}}-->
 				</div>
 			</div>
 
@@ -43,11 +30,11 @@
 									{{#posts}}
 									<div class="4u 12u(mobile)">
 										<section class="box post-item-home">
-											<a href="{{url}}" class="image featured" title="Go to {{title}}">
-												<img src="{{globals.baseurl}}{{banner}}" alt="{{title}}" />
+											<a href="{{../globals.siteurl}}{{url}}" class="image featured" title="Go to {{title}}">
+												<img src="{{../globals.siteurl}}{{banner}}" alt="{{title}}" />
 											</a>
 											<header>
-												<h3><a href="{{url}}" title="Go to {{title}}">{{title}}</a></h3>
+												<h3><a href="{{../globals.siteurl}}{{url}}" title="Go to {{title}}">{{title}}</a></h3>
 												<p>on {{creation}}</p>
 											</header>
 											<div class="excerpt">
@@ -56,10 +43,10 @@
 											<footer>
 												<ul class="actions">
 													<li>
-														<a href="{{url}}" class="button icon fa-file-text" title="Go to {{title}}">Read</a>
+														<a href="{{../globals.siteurl}}{{url}}" class="button icon fa-file-text" title="Go to {{title}}">Read</a>
 														</li>
 													<li>
-														<a href="{{url}}#disqus_thread" class="button alt icon fa-comment" title="Go directly to {{title}} comments.">0</a>
+														<a href="{{../globals.siteurl}}{{url}}#disqus_thread" class="button alt icon fa-comment" title="Go directly to {{title}} comments.">0</a>
 													</li>
 												</ul>
 											</footer>

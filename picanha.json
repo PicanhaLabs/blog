@@ -4,7 +4,14 @@
 		"static"	: ["css", "js", "img", "fonts"],
 		"layouts"	: ["post", "page", "team"],
 		"globals"	: {
-			"siteurl"	: "http://blog.picanhalabs.com/"
+			"dev" : {
+				"siteurl"		: "",
+				"omitfilename"	: false
+			},
+			"prod": {
+				"siteurl"		: "http://blog.picanhalabs.com/",
+				"omitfilename"	: true
+			}
 		}
 	},
 	"authors" : [
