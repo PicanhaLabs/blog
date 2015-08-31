@@ -2778,3 +2778,12 @@ article.post footer p {
 	-webkit-transform: translateY(-10px);
     margin-left: 15px;
 }
+
+.tags span {
+	padding: 5px;
+	background: #ccc;
+	color: #666;
+	margin-right: 5px;
+	border-radius: 5px;
+	display: inline-block;
+}
