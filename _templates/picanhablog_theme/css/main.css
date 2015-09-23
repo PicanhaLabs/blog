@@ -1384,6 +1384,7 @@
 		.image img {
 			display: block;
 			max-height: 174px;
+			min-height: 174px;
 			width: 100%;
 			object-fit: cover;
 		}
@@ -2217,6 +2218,7 @@
 
 		.image img { 
 			max-height: 144px;
+			min-height: 144px;
 		}
 	}
 
