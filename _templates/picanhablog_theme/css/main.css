@@ -2625,6 +2625,14 @@
 			text-align: center !important;
 		}
 
+		article.post p img {
+			max-width: 90%;
+		}
+
+		.tags span {
+			display: block !important;
+		}
+
 	}
 
 
@@ -2690,9 +2698,9 @@ article.post ul {
 
 article.post p img {
 	display: block;
-    margin: 0 auto;
-    border: 1px solid #d52349;
-    padding: 5px;
+	margin: 0 auto;
+	border: 1px solid #d52349;
+	padding: 5px;
 }
 
 .authorlist .author {
