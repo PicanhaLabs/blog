@@ -2658,6 +2658,12 @@
     line-height: 1.3em;
     height: 60px;
 }
+.post-item-home footer {
+	text-align: center;
+}
+.post-item-home footer .actions {
+	display-inline: block;
+}
 
 
 .post-banner {
