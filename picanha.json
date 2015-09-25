@@ -17,20 +17,26 @@
 	"authors" : [
 		{
 			"name" 	: "Gabriel Alan",
+			"nick"	: "Gabriel",
 			"email" : "gabriel.alan@outlook.com.br",
 			"link"	: "https://github.com/gabrielalan",
+			"linknm": "Github",
 			"roles"	: ["developer", "author"]
 		},
 		{
 			"name" 	: "Renie Siqueira",
+			"nick"	: "Renie",
 			"email" : "cadeorenie@gmail.com",
 			"link"	: "https://github.com/renie",
+			"linknm": "Github",
 			"roles"	: ["developer", "author", "reviewer"]
 		},
 		{
 			"name" 	: "Talissonn da Silva",
+			"nick"	: "Talissonn",
 			"email" : "talissonn.dasilva@gmail.com",
 			"link"	: "http://www.behance.net/talissonn",
+			"linknm": "Behance",
 			"roles"	: ["designer"]
 		},
 		{
