@@ -17,5 +17,13 @@ git clone https://github.com/PicanhaLabs/blog.git picanhablog
 
 ```
 cd picanhablog
-picanha
+picanha grill
+```
+
+OR
+
+
+```
+cd picanhablog
+picanha grill dev
 ```
