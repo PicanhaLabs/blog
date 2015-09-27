@@ -2756,6 +2756,7 @@ article.post p img {
 	font-size: 14px;
 	display: inline-block;
 	transform: translateY(-3px) rotate(-5deg);
+	-webkit-transform: translateY(-3px) rotate(-5deg);
 }
 
 
@@ -2766,8 +2767,8 @@ article.post p img {
 }
 
 .homepage .logo {
-	height: 350px;
-	width: 350px;
+	height: 250px;
+	width: 250px;
 }
 
 .logo a {
@@ -2784,8 +2785,8 @@ article.post p img {
 
 .logo a:hover,
 .logo a:focus {
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
+	transform: scale(1.1) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
 }
 
 .social {
