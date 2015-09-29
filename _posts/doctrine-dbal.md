@@ -9,15 +9,17 @@ date: 28/09/2015
 draft: true
 ---
 
-Some days ago I was researching about an ORM to plug in our system.
-At the first moment i remember of Doctrine, because I already have others experiences with this ORM and it was good.
+Some days ago I was on a research about an ORM to use in our system.
 
-But, I want first, bring to you the DBAL (Database Abstraction Layer) of Doctrine, which is powerfull too.
+So I remembered about Doctrine, because I already had other experiences with this ORM and it was good.
 
-At first, we must know that an ORM (Object-relational mapping) can exists without an DBAL. But, by obvious reasons, **its always good have an DBAL** to abstract the diferences between the database engines.
+But before entering on this, I want to bring you Doctrine's DBAL (Database Abstraction Layer).
 
-So, lets start configuring the DBAL. I will use composer PHP to manage dependencies, but you can manage it by yourself.
-First, we put the dependency of Doctrine DBAL, at **composer.json**:
+First, we must know that an ORM (Object-Relational Mapping) can exists without a DBAL. But, by obvious reasons, **its always good to have a DBAL** to abstract the diferences between database engines.
+
+So, lets start configuring the DBAL. I'll use composer PHP to manage dependencies, but you can manage it by yourself.
+
+Put the dependency of Doctrine DBAL, at **composer.json**:
 
 ```json
 {
@@ -27,13 +29,13 @@ First, we put the dependency of Doctrine DBAL, at **composer.json**:
 }
 ```
 
-After you should run the below command:
+Then run the below command:
 
 ```
 php composer.phar install
 ```
 
-Doing that, we have the dependencies installed, and we can create the bootstrap.php that contains the DBAL configuration. That bootstrap.php must create a connection with the database parameters:
+Doing that we have the dependencies installed, and we can create the bootstrap.php that contains a DBAL configuration. **botstrap.php** must create a connection with these database parameters:
 
 ```php
 <?php
@@ -53,7 +55,7 @@ $connectionParams = array(
 $conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
 ```
 
-I'm using the PostgreSQL database, but you can use others like MySQL, SQL Server or Oracle. Lets Use that connection created on bootstrap.php:
+I'm using the PostgreSQL database, but you can use other one like MySQL, SQL Server or Oracle. Let's use that connection created by bootstrap.php:
 
 ```php
 <?php
@@ -68,12 +70,13 @@ foreach( $result as $row ) {
 }
 ```
 
-Here we have an simple SQL, that selects all fields of the PRODUCTS table, and print the product names.
+Here we have a simple SQL that selects all fields of PRODUCTS table and print product names.
+
 The query method is the most simple one for fetching data, but it also has several drawbacks:
 
-* There is no way to add dynamic parameters to the SQL query without modifying $sql itself. This can easily lead to a category of security holes called SQL injection, where a third party can modify the SQL executed and even execute their own queries through clever exploiting of the security hole.
-* Quoting dynamic parameters for an SQL query is tedious work and requires lots of use of the Doctrine\DBAL\Connection#quote() method, which makes the original SQL query hard to read/understand.
-* Databases optimize SQL queries before they are executed. Using the query method you will trigger the optimization process over and over again, although it could re-use this information easily using a technique called prepared statements.
+* There is no way to add dynamic parameters to the SQL query without modifying $sql itself. This can easily lead to a category of security holes called SQL injection, where someone can modify the SQL executed or even execute their own queries through clever exploiting of the security hole;
+* Quoting dynamic parameters for a SQL query is tedious work and requires lots of use of the Doctrine\DBAL\Connection#quote() method, which makes the original SQL query hard to read/understand.
+* Databases optimize SQL queries before they are executed. Using the query method you will trigger the optimization process over and over again, although it could re-use this information easily using a technique called **prepared statements**.
 
 This three arguments and some more technical details hopefully convinced you to investigate prepared statements for accessing your database.
 
@@ -102,12 +105,12 @@ $stmt = $conn->prepare($sql);
 $stmt->bindValue("name", $name);
 $stmt->execute();
 ```
-Doctrine 2 has some others ways to retrieve data, and can be usefull in some cases. **You can see them [here](http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/data-retrieval-and-manipulation.html).**
+Doctrine 2 has some others ways to retrieve data, and it can be useful in some cases. **You can see them [here](http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/data-retrieval-and-manipulation.html).**
 
 But I want to write more about others methods implemented by Doctrine DBAL. Inserts, Updates and Deletes.
-You might be thinking that I'll show you how to wrote SQL's like 'UPDATE table...' or 'DELETE FROM table...'. **But, dont.**
+You might be thinking that I'll show you how to write SQL's like 'UPDATE table...' or 'DELETE FROM table...'. **But I don't.**
 
-Doctrine has trhee simple methods that abstract: insert, delete and update:
+Doctrine has three simple methods that abstract: insert, delete and update:
 
 ```php
 <?php
@@ -121,7 +124,7 @@ $conn->update('user', array('username' => 'jwage'), array('id' => 1));
 // UPDATE user (username) VALUES (?) WHERE id = ? (jwage, 1)
 ```
 
-**By default the Doctrine DBAL does no escaping**. Escaping is a very tricky business to do automatically, therefore there is none by default. The ORM internally escapes all your values, because it has lots of metadata available about the current context. When you use the Doctrine DBAL as standalone, you have to take care of this yourself. The following methods help you with it:
+**By default Doctrine DBAL does no escaping**. Escaping is a very tricky business to do automatically, therefore there is none by default. The ORM internally escapes all your values, because it has lots of metadata available about the current context. When you use standalone Doctrine DBAL, you have to take care of this by yourself. The following methods can help you with it:
 
 ```php
 <?php
@@ -131,7 +134,7 @@ $quoted = $conn->quote('1234', \PDO::PARAM_INT);
 
 Maybe I have not impressed you with that DBAL, or you had others good experiences on another DBAL libs, but I want to tell you about one last thing: **SQL Query Builder**.
 
-Doctrine 2.1 ships with a powerful query builder for the SQL language. This QueryBuilder object has methods to add parts to an SQL statement. If you built the complete state you can execute it using the connection it was generated from. The API is roughly the same as that of the DQL Query Builder, which we'll talk about in other moment.
+Doctrine 2.1 ships a powerful query builder for SQL language. This QueryBuilder object has methods to add parts to a SQL statement. If you build the complete state you can execute it using the connection it was generated from. The API is roughly the same as that of the DQL Query Builder, which we'll talk about in other moment.
 
 You can access the QueryBuilder by calling Doctrine\DBAL\Connection#createQueryBuilder:
 
@@ -143,9 +146,9 @@ $queryBuilder = $conn->createQueryBuilder();
 
 It is important to understand how the query builder works in terms of preventing SQL injection. Because SQL allows expressions in almost every clause and position the Doctrine QueryBuilder can only prevent SQL injections for calls to the methods setFirstResult() and setMaxResults().
 
-All other methods cannot distinguish between user- and developer input and are therefore subject to the possibility of SQL injection.
+All the other methods cannot distinguish between a user and a developer input.
 
-To safely work with the QueryBuilder you should NEVER pass user input to any of the methods of the QueryBuilder and use the placeholder ? or :name syntax in combination with $queryBuilder->setParameter($placeholder, $value) instead.
+To safely work with QueryBuilder you should NEVER pass a user input directly to any of the methods of QueryBuilder and use the placeholder ? or :name syntax in combination with $queryBuilder->setParameter($placeholder, $value) instead.
 
 Here an simple example of Query Builder:
 
@@ -159,7 +162,7 @@ $queryBuilder
 ;
 ```
 
-So, thats enough for today. In the next post, we will talk about Doctrine 2 ORM, which is one of the best PHP ORM's.
+So, thats enough for today. Next post we will talk about Doctrine 2 ORM, which is one of the best PHP ORM's.
 
 Until then.
 
