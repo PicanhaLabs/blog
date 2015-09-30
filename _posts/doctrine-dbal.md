@@ -6,7 +6,6 @@ tags: doctrine, php, dbal, database
 template: post
 banner: img/post/backbone/post.jpg
 date: 28/09/2015
-draft: true
 ---
 
 Some days ago I was on a research about an ORM to use in our system.
