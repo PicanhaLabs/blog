@@ -2,7 +2,7 @@ language: node_js
 node_js: "6"
 
 before_install:
-	- npm install -g picanhajs
-	- npm update
+  - npm install -g picanhajs
+  - npm update
 install: npm install
 before_script: grunt travis
