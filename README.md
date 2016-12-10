@@ -1,5 +1,4 @@
-# PicanhaLabs
-
+# PicanhaLabs [![Build Status](https://travis-ci.org/PicanhaLabs/blog.svg?branch=master)](https://travis-ci.org/PicanhaLabs/blog)
 ## Install PicanhaJS
 
 ```
